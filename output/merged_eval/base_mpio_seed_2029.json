@@ -1,0 +1,2904 @@
+{
+  "episodes": 150,
+  "valid_episodes": 150,
+  "scene_sample_attempts": 150,
+  "invalid_scene_skips": 0,
+  "balanced_scene_eval": false,
+  "episodes_per_scene": null,
+  "target_scene_types": [],
+  "selected_methods": [
+    "base_mpio"
+  ],
+  "obstacle_metric_definition": "collision_obs_rate is evaluated on inflated boundary: dist_to_center < r_obs + safe_clearance_m",
+  "latency_protocol": "step-level decision latency (sum over UAVs per sim step); overrun if latency > dt",
+  "scene_stats": {
+    "b_chicane_chain": {},
+    "e_pillar_forest": {},
+    "g_forest_dynamic_spheres": {}
+  },
+  "bucket_stats": {
+    "3-5": {},
+    "6-8": {},
+    "9-9": {}
+  },
+  "overall": {
+    "base_mpio": {
+      "count": 150,
+      "collision_free_rate": 0.31333333333333335,
+      "collision_nbr_rate": 0.58,
+      "collision_obs_rate": 0.16666666666666669,
+      "formation_max": 13.353677046790295,
+      "formation_mean": 2.000588500941417,
+      "formation_ok_rate": 0.29333333333333333,
+      "latency_budget_ms": 500.0,
+      "latency_decision_mean_ms": 4286.111023552184,
+      "latency_decision_p95_ms": 14549.372143880206,
+      "latency_decision_std_ms": 4885.605958308207,
+      "latency_step_mean_ms": 26487.64257123394,
+      "latency_step_overrun_ratio": 0.9892436974789917,
+      "latency_step_p95_ms": 61833.59687109374,
+      "latency_step_std_ms": 17645.49417577031,
+      "obstacle_hard_collision_rate": 0.10666666666666667,
+      "obstacle_margin_violation_rate": 0.16666666666666669,
+      "reach_ok_rate": 1.0,
+      "safe_ok_rate": 0.25333333333333335
+    }
+  },
+  "episodes_detail": [
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 286685469,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 20330.489237296482,
+        "latency_step_p95_ms": 35373.816796875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 161392245,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 16112.131015040293,
+        "latency_step_p95_ms": 31326.339453124998,
+        "latency_step_overrun_ratio": 0.9411764705882353,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 330852173,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 24212.10962529543,
+        "latency_step_p95_ms": 52672.63281249998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 385573287,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 12547.156309496455,
+        "latency_step_p95_ms": 20653.67890625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 984994166,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 8008.02069470061,
+        "latency_step_p95_ms": 18884.690234374997,
+        "latency_step_overrun_ratio": 0.8991596638655462,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 683738255,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 13627.899020154937,
+        "latency_step_p95_ms": 21554.234960937498,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 64277934,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 10182.633513955509,
+        "latency_step_p95_ms": 17309.03515625,
+        "latency_step_overrun_ratio": 0.9243697478991597,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 299092739,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 10715.363234063156,
+        "latency_step_p95_ms": 28433.72480468749,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 52436943,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 12892.798462939863,
+        "latency_step_p95_ms": 19926.051562499997,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 4,
+      "rng_seed": 408499637,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 10177.527265789127,
+        "latency_step_p95_ms": 20114.501953124996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 870874023,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 9992.390946203921,
+        "latency_step_p95_ms": 19615.203906249997,
+        "latency_step_overrun_ratio": 0.9747899159663865,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 165044033,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 15212.597803965336,
+        "latency_step_p95_ms": 24592.542968749996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 3,
+      "rng_seed": 57498434,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 8343.26778431099,
+        "latency_step_p95_ms": 18537.4603515625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 303729310,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 7636.555299903164,
+        "latency_step_p95_ms": 13878.067578125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 278637671,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 24069.46652632,
+        "latency_step_p95_ms": 55688.21289062499,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 163304893,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 27551.479410123426,
+        "latency_step_p95_ms": 53178.13828124999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 578768806,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 18218.204109768907,
+        "latency_step_p95_ms": 34739.04218749999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 249654986,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14511.148704208246,
+        "latency_step_p95_ms": 23474.870703125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 285405927,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 11670.67749414524,
+        "latency_step_p95_ms": 33531.278125,
+        "latency_step_overrun_ratio": 0.9411764705882353,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 395578821,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 11097.071718424308,
+        "latency_step_p95_ms": 22069.802734374996,
+        "latency_step_overrun_ratio": 0.9159663865546218,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 58439998,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 14461.711494638139,
+        "latency_step_p95_ms": 24333.756640624997,
+        "latency_step_overrun_ratio": 0.9495798319327731,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 14344684,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14841.083336068803,
+        "latency_step_p95_ms": 24408.939257812497,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 194594961,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 12609.402266430254,
+        "latency_step_p95_ms": 20731.339648437497,
+        "latency_step_overrun_ratio": 0.9495798319327731,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 614296746,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 38165.12851644564,
+        "latency_step_p95_ms": 62572.74023437499,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 330113659,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34847.07257336529,
+        "latency_step_p95_ms": 58829.719140625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 513630585,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 29717.225409499737,
+        "latency_step_p95_ms": 55014.78593749999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 372579306,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 29407.787527901786,
+        "latency_step_p95_ms": 57801.32734374998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 714258788,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34354.38106658679,
+        "latency_step_p95_ms": 55154.688671874996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 542268083,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 29763.198497099034,
+        "latency_step_p95_ms": 62438.12734374999,
+        "latency_step_overrun_ratio": 0.9411764705882353,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 3,
+      "rng_seed": 741907188,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 19907.471236413265,
+        "latency_step_p95_ms": 42570.989453124996,
+        "latency_step_overrun_ratio": 0.907563025210084,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 461204084,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 28272.78514522264,
+        "latency_step_p95_ms": 52623.851953125,
+        "latency_step_overrun_ratio": 0.957983193277311,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 268491609,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 33179.50805048582,
+        "latency_step_p95_ms": 56836.24296874999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 477666622,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 44973.728843881305,
+        "latency_step_p95_ms": 73850.36171874999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 4,
+      "rng_seed": 494770407,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 30252.57944623162,
+        "latency_step_p95_ms": 54912.85351562499,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 4,
+      "rng_seed": 486058489,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 24814.725372570905,
+        "latency_step_p95_ms": 46022.65468749999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 343697056,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 27381.983775932247,
+        "latency_step_p95_ms": 46529.55703124997,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 837742841,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 39068.34526639025,
+        "latency_step_p95_ms": 69515.73984375,
+        "latency_step_overrun_ratio": 0.9411764705882353,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 8,
+      "rng_seed": 269943971,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 35283.50172334559,
+        "latency_step_p95_ms": 62603.061718749996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 399975579,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 27778.951688878675,
+        "latency_step_p95_ms": 55990.178125,
+        "latency_step_overrun_ratio": 0.9243697478991597,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 5,
+      "rng_seed": 541039182,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 30274.26816077994,
+        "latency_step_p95_ms": 80045.25390624999,
+        "latency_step_overrun_ratio": 0.9495798319327731,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 400528056,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 27558.604369091387,
+        "latency_step_p95_ms": 46078.358593749996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 4,
+      "rng_seed": 102416776,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 19123.794356274004,
+        "latency_step_p95_ms": 44812.923828125,
+        "latency_step_overrun_ratio": 0.8151260504201681,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 4,
+      "rng_seed": 955289484,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 24311.650809151786,
+        "latency_step_p95_ms": 41965.05546875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 9,
+      "rng_seed": 697854218,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34496.24848591781,
+        "latency_step_p95_ms": 62816.18671874999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 90315797,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 34864.21422826943,
+        "latency_step_p95_ms": 63539.19726562497,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 600766337,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 28507.14277507878,
+        "latency_step_p95_ms": 48825.296484374994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 261374229,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34721.9607777315,
+        "latency_step_p95_ms": 80236.24843749998,
+        "latency_step_overrun_ratio": 0.9411764705882353,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 207347169,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 33803.4256745667,
+        "latency_step_p95_ms": 64615.38476562499,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 7,
+      "rng_seed": 343751903,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 31330.91919509503,
+        "latency_step_p95_ms": 76546.44453125,
+        "latency_step_overrun_ratio": 0.957983193277311,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "b_chicane_chain",
+      "N_uav": 6,
+      "rng_seed": 50998665,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14949.70048163919,
+        "latency_step_p95_ms": 37416.138281249994,
+        "latency_step_overrun_ratio": 0.9327731092436975,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 875377068,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 22547.409731055508,
+        "latency_step_p95_ms": 46164.009374999994,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 4,
+      "rng_seed": 688166927,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 16086.74032054228,
+        "latency_step_p95_ms": 46003.735156249975,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 836836457,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 28253.876251477155,
+        "latency_step_p95_ms": 111065.68671875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 4,
+      "rng_seed": 393007864,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 9661.93721290396,
+        "latency_step_p95_ms": 27818.874999999993,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 638754121,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14755.858021968554,
+        "latency_step_p95_ms": 46871.522265625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 505854361,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 23064.96400874803,
+        "latency_step_p95_ms": 49572.458593749994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 539866056,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 20853.46970296908,
+        "latency_step_p95_ms": 51777.530859374994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 826802710,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 18480.52413504464,
+        "latency_step_p95_ms": 42915.6078125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 98966202,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 22633.166060760243,
+        "latency_step_p95_ms": 52855.517578125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 247052232,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 15091.59528049501,
+        "latency_step_p95_ms": 38762.17773437497,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 269317044,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 39108.75571986607,
+        "latency_step_p95_ms": 107855.16953124998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 760142895,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 25233.317809545693,
+        "latency_step_p95_ms": 82130.60078124999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 5,
+      "rng_seed": 885109315,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 16540.38558164965,
+        "latency_step_p95_ms": 42675.8875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 39611431,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 13232.17170276161,
+        "latency_step_p95_ms": 43959.146093749994,
+        "latency_step_overrun_ratio": 0.9747899159663865,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 491068815,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 13084.965229451156,
+        "latency_step_p95_ms": 30690.13457031249,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 357164601,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 23533.296382615546,
+        "latency_step_p95_ms": 49263.991406249996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 357819734,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 32643.707275390625,
+        "latency_step_p95_ms": 64387.22226562498,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 3,
+      "rng_seed": 795944772,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 23829.607179785977,
+        "latency_step_p95_ms": 43458.93515625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 687442324,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 37996.270585773374,
+        "latency_step_p95_ms": 92880.69843749999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 4,
+      "rng_seed": 30472970,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 55146.01521878283,
+        "latency_step_p95_ms": 133780.84999999998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 4,
+      "rng_seed": 719931783,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 18974.596614741477,
+        "latency_step_p95_ms": 50296.249609374965,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 153706826,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 43279.051759992326,
+        "latency_step_p95_ms": 115564.69843749999,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 3,
+      "rng_seed": 206992957,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 30926.734424238446,
+        "latency_step_p95_ms": 88565.87343749999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 934738360,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 42856.198032924105,
+        "latency_step_p95_ms": 99529.47187499999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 650909804,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34874.44355222558,
+        "latency_step_p95_ms": 93326.64140625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 724481145,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 40497.0568677758,
+        "latency_step_p95_ms": 101521.61328124999,
+        "latency_step_overrun_ratio": 0.9327731092436975,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 912727375,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 50583.90933560924,
+        "latency_step_p95_ms": 109210.821875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 435400660,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 46964.40341468619,
+        "latency_step_p95_ms": 136155.44531249997,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 836006205,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 42538.2185366334,
+        "latency_step_p95_ms": 100921.37343749998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 5,
+      "rng_seed": 933264843,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 56363.114491695116,
+        "latency_step_p95_ms": 113633.21796874996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 4,
+      "rng_seed": 574117543,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14608.203610716748,
+        "latency_step_p95_ms": 34963.37890624996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 298635384,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 30275.007262670693,
+        "latency_step_p95_ms": 70358.23984375,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 75343399,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 34788.76082835478,
+        "latency_step_p95_ms": 87088.53046874999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 883230967,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 50828.86953248096,
+        "latency_step_p95_ms": 146495.740625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 206972999,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 47021.97459180816,
+        "latency_step_p95_ms": 131911.884375,
+        "latency_step_overrun_ratio": 0.9831932773109243,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 893873982,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 34753.26229319853,
+        "latency_step_p95_ms": 119380.22109374996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 199548494,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 36149.59209025407,
+        "latency_step_p95_ms": 112533.02578124993,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 708960950,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 26093.20323822278,
+        "latency_step_p95_ms": 92188.74609374997,
+        "latency_step_overrun_ratio": 0.9663865546218487,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 7,
+      "rng_seed": 451454482,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 29882.790055475314,
+        "latency_step_p95_ms": 71440.60234374997,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 304917311,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14141.240088711265,
+        "latency_step_p95_ms": 29515.8556640625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 3,
+      "rng_seed": 633581625,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 7931.459588503637,
+        "latency_step_p95_ms": 16297.387109374999,
+        "latency_step_overrun_ratio": 0.9831932773109243,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 91726705,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 16096.074821920956,
+        "latency_step_p95_ms": 35028.05781249999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 4,
+      "rng_seed": 54431544,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 24492.83666376707,
+        "latency_step_p95_ms": 73491.27734374996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 3,
+      "rng_seed": 267782737,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 11725.617569482627,
+        "latency_step_p95_ms": 43883.243749999994,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 505371587,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 18242.13779648212,
+        "latency_step_p95_ms": 34445.370312499996,
+        "latency_step_overrun_ratio": 0.9831932773109243,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 6,
+      "rng_seed": 149807136,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 12965.408002068014,
+        "latency_step_p95_ms": 49143.89296875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 710784753,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 17671.37996486055,
+        "latency_step_p95_ms": 44703.07265625,
+        "latency_step_overrun_ratio": 0.9831932773109243,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 266631598,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 16063.04217683167,
+        "latency_step_p95_ms": 36118.46601562499,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 8,
+      "rng_seed": 386370231,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 15863.761864125228,
+        "latency_step_p95_ms": 43315.326953125,
+        "latency_step_overrun_ratio": 0.9831932773109243,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "e_pillar_forest",
+      "N_uav": 9,
+      "rng_seed": 514968108,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 24695.123434627756,
+        "latency_step_p95_ms": 67592.36640624996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 763992727,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 12335.037341206014,
+        "latency_step_p95_ms": 29327.033203125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 967757881,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 42856.09170250131,
+        "latency_step_p95_ms": 91590.53046874999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 520554101,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 17766.5856684837,
+        "latency_step_p95_ms": 48085.69570312499,
+        "latency_step_overrun_ratio": 0.9915966386554622,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 725465922,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 12911.430146033023,
+        "latency_step_p95_ms": 28829.9025390625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 747474499,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 14263.67237456506,
+        "latency_step_p95_ms": 27477.7412109375,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 5,
+      "rng_seed": 901101652,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 12996.061656791622,
+        "latency_step_p95_ms": 52868.25390625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 5,
+      "rng_seed": 744105035,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 17454.45440725118,
+        "latency_step_p95_ms": 32261.394726562496,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 704261225,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 17130.099800173975,
+        "latency_step_p95_ms": 43931.68203125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 125618715,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 13114.396553103663,
+        "latency_step_p95_ms": 31467.845507812493,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 202111514,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 15745.866379168856,
+        "latency_step_p95_ms": 46299.66640625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 825938134,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 13497.223216337316,
+        "latency_step_p95_ms": 23874.86328125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 4,
+      "rng_seed": 962948853,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 30944.974238035058,
+        "latency_step_p95_ms": 92016.75234374999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 941130988,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 35555.22842227711,
+        "latency_step_p95_ms": 108642.81015625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 5,
+      "rng_seed": 447217610,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 14707.876111968224,
+        "latency_step_p95_ms": 45522.970703124985,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 955296738,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 14041.24563726858,
+        "latency_step_p95_ms": 43025.942968749994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 262652243,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 20144.845924698006,
+        "latency_step_p95_ms": 50235.96132812499,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 639108074,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 17382.141634388132,
+        "latency_step_p95_ms": 38486.923828125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 693783993,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 43567.731367351626,
+        "latency_step_p95_ms": 81237.36015624998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 185830337,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 35156.487848362,
+        "latency_step_p95_ms": 81134.8921875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 482709703,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 60631.13974691439,
+        "latency_step_p95_ms": 122722.1578125,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 485122751,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 55413.115837545956,
+        "latency_step_p95_ms": 127807.59531249998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 172759610,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34257.84067670037,
+        "latency_step_p95_ms": 79877.43124999998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 710479770,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 62853.848247111346,
+        "latency_step_p95_ms": 132458.82656249998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 5,
+      "rng_seed": 347405431,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 44891.895204175424,
+        "latency_step_p95_ms": 99389.79374999998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 4,
+      "rng_seed": 835511984,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 25677.058238822872,
+        "latency_step_p95_ms": 62898.018749999996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 138287561,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 57019.77777048319,
+        "latency_step_p95_ms": 129904.10625,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 901243679,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 43119.02177980567,
+        "latency_step_p95_ms": 90918.6296875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 204841788,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 19096.481813687238,
+        "latency_step_p95_ms": 46010.45781249998,
+        "latency_step_overrun_ratio": 0.9411764705882353,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 5,
+      "rng_seed": 39259080,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 44188.20408720129,
+        "latency_step_p95_ms": 110150.71718749998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 964687589,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 43073.66017830472,
+        "latency_step_p95_ms": 118917.52656249994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 403300388,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 50043.3270417542,
+        "latency_step_p95_ms": 127724.60390624998,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 588312610,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 42086.36719570641,
+        "latency_step_p95_ms": 98612.60156249999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 930022217,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 38835.805705094535,
+        "latency_step_p95_ms": 63588.65859374997,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 4,
+      "rng_seed": 963578530,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 33360.65009006533,
+        "latency_step_p95_ms": 108917.70859375,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 630022232,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 58950.49206440389,
+        "latency_step_p95_ms": 119144.84687499996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 656841707,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 41801.597984506305,
+        "latency_step_p95_ms": 102988.50624999999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 436523634,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 39712.93252281381,
+        "latency_step_p95_ms": 101163.81015624994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 4,
+      "rng_seed": 554905867,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 17646.104477826288,
+        "latency_step_p95_ms": 37406.713671875,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 6,
+      "rng_seed": 445376636,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 15076.244680196298,
+        "latency_step_p95_ms": 33536.52109375,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 219325849,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 7532.306346220129,
+        "latency_step_p95_ms": 14691.308789062494,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 272047901,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 35985.26862585244,
+        "latency_step_p95_ms": 109903.29375,
+        "latency_step_overrun_ratio": 0.9663865546218487,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 9,
+      "rng_seed": 335741732,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 15500.594646550026,
+        "latency_step_p95_ms": 37231.982031249994,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 4,
+      "rng_seed": 163378008,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 9507.213250681132,
+        "latency_step_p95_ms": 20604.812304687493,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 622310418,
+      "base_mpio": {
+        "safe_ok": true,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 14660.146720309218,
+        "latency_step_p95_ms": 34569.415234374996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 916484611,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 16291.16524524849,
+        "latency_step_p95_ms": 39410.073437499996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 3,
+      "rng_seed": 545838799,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": true,
+        "collision_obs_hard": true,
+        "collision_nbr": false,
+        "latency_step_mean_ms": 13141.113258810605,
+        "latency_step_p95_ms": 39494.068749999984,
+        "latency_step_overrun_ratio": 0.9831932773109243,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 5,
+      "rng_seed": 735303887,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": false,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 21135.76619124212,
+        "latency_step_p95_ms": 63166.33906249999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 674237859,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 34904.812409729515,
+        "latency_step_p95_ms": 100501.58046874999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 8,
+      "rng_seed": 805050452,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 21871.549331793263,
+        "latency_step_p95_ms": 55440.924999999996,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    },
+    {
+      "scene_type": "g_forest_dynamic_spheres",
+      "N_uav": 7,
+      "rng_seed": 668165797,
+      "base_mpio": {
+        "safe_ok": false,
+        "reach_ok": true,
+        "formation_ok": true,
+        "collision_obs": false,
+        "collision_obs_hard": false,
+        "collision_nbr": true,
+        "latency_step_mean_ms": 39252.43924181,
+        "latency_step_p95_ms": 100867.69765624999,
+        "latency_step_overrun_ratio": 1.0,
+        "failure_step": null,
+        "failure_type": null,
+        "min_clearance": null
+      }
+    }
+  ],
+  "source_files": [
+    "base_s2029_b_chicane_chain.json",
+    "base_s2029_e_pillar_forest.json",
+    "base_s2029_g_forest_dynamic_spheres.json"
+  ]
+}
